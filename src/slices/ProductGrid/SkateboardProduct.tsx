@@ -35,7 +35,7 @@ export async function SkateboardProduct({ id }: Props) {
   const product = await client.getByID<Content.SkateboardDocument>(id);
 
   const price = isFilled.number(product.data.price)
-    ? `$${(product.data.price / 100).toFixed(2)}`
+    ? `₹${(product.data.price / 100).toFixed(2)}`
     : "Price Not Available";
 
   const dominantColor = isFilled.image(product.data.image)
