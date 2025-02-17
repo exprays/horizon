@@ -28,6 +28,7 @@
 				]
 			},
 			"button": {
+				"key": "feb9bd94-049b-486b-aa02-d95d3fcc0048",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
@@ -90,6 +91,52 @@
 				"__TYPE__": "FieldContent",
 				"value": "#88df5a",
 				"type": "Color"
+			},
+			"body_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#1dc595",
+				"type": "Color"
+			},
+			"metal_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#f94f1d",
+				"type": "Color"
+			},
+			"glass_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#fa54ed",
+				"type": "Color"
+			},
+			"light_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#d6e0d5",
+				"type": "Color"
+			},
+			"exhaust_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#ea257a",
+				"type": "Color"
+			},
+			"tyre_texture": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+					"width": 4172,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+				"width": 4172,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"thumbnails": {}
 			}
 		},
 		"items": []

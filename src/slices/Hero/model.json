@@ -69,6 +69,49 @@
             "label": "Skateboard Bolt Color",
             "placeholder": ""
           }
+        },
+        "body_color": {
+          "type": "Color",
+          "config": {
+            "label": "Body color",
+            "placeholder": ""
+          }
+        },
+        "metal_color": {
+          "type": "Color",
+          "config": {
+            "label": "Metal color",
+            "placeholder": ""
+          }
+        },
+        "glass_color": {
+          "type": "Color",
+          "config": {
+            "label": "Glass color",
+            "placeholder": ""
+          }
+        },
+        "light_color": {
+          "type": "Color",
+          "config": {
+            "label": "Light color",
+            "placeholder": ""
+          }
+        },
+        "exhaust_color": {
+          "type": "Color",
+          "config": {
+            "label": "Exhaust color",
+            "placeholder": ""
+          }
+        },
+        "tyre_texture": {
+          "type": "Image",
+          "config": {
+            "label": "Tyre texture",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {}

@@ -213,7 +213,7 @@ export interface SettingsDocumentDataNavigationItem {
    * - **API ID Path**: settings.navigation[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  link: prismic.LinkField;
+  link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**
@@ -366,7 +366,13 @@ interface SkateboardDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  customizer_link: prismic.LinkField;
+  customizer_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
 }
 
 /**
@@ -442,7 +448,13 @@ interface SkaterDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  customizer_link: prismic.LinkField;
+  customizer_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
 }
 
 /**
@@ -496,7 +508,7 @@ export interface HeroSliceDefaultPrimary {
    * - **API ID Path**: hero.default.primary.button
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  button: prismic.LinkField;
+  button: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 
   /**
    * Skateboard Deck Texture field in *Hero → Default → Primary*
@@ -537,6 +549,66 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#color
    */
   skateboard_bolt_color: prismic.ColorField;
+
+  /**
+   * Body color field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.body_color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  body_color: prismic.ColorField;
+
+  /**
+   * Metal color field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.metal_color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  metal_color: prismic.ColorField;
+
+  /**
+   * Glass color field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.glass_color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  glass_color: prismic.ColorField;
+
+  /**
+   * Light color field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.light_color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  light_color: prismic.ColorField;
+
+  /**
+   * Exhaust color field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.exhaust_color
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  exhaust_color: prismic.ColorField;
+
+  /**
+   * Tyre texture field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.tyre_texture
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  tyre_texture: prismic.ImageField<never>;
 }
 
 /**
@@ -735,7 +807,7 @@ export interface TextAndImageSliceDefaultPrimary {
    * - **API ID Path**: text_and_image.default.primary.button
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  button: prismic.LinkField;
+  button: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 
   /**
    * Background Image field in *TextAndImage → Default → Primary*
@@ -813,7 +885,7 @@ export interface TextAndImageSliceImageOnLeftPrimary {
    * - **API ID Path**: text_and_image.imageOnLeft.primary.button
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  button: prismic.LinkField;
+  button: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 
   /**
    * Background Image field in *TextAndImage → Image on Left → Primary*
