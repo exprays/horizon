@@ -5,11 +5,11 @@ import { SkaterScribble } from "./SkaterScribble";
 import clsx from "clsx";
 
 type Props = {
-  skater: Content.SkaterDocument;
+  member: Content.MemberDocument;
   index: number;
 };
 
-export function Skater({ skater, index }: Props) {
+export function Member({ member, index }: Props) {
   const colors = [
     "text-brand-blue",
     "text-brand-lime",
@@ -24,7 +24,7 @@ export function Skater({ skater, index }: Props) {
     <div className="skater group relative flex flex-col items-center gap-4">
       <div className="stack-layout overflow-hidden">
         <PrismicNextImage
-          field={skater.data.photo_background}
+          field={member.data.photo_background}
           width={500}
           imgixParams={{ q: 20 }}
           alt=""
@@ -32,19 +32,19 @@ export function Skater({ skater, index }: Props) {
         />
         <SkaterScribble className={clsx("relative", scribbleColor)} />
         <PrismicNextImage
-          field={skater.data.photo_foreground}
+          field={member.data.photo_foreground}
           width={500}
           alt=""
           className="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
         />
         <div className="relative h-48 w-full place-self-end bg-gradient-to-t from-black via-transparent to-transparent"></div>
         <h3 className="relative grid place-self-end justify-self-start p-2 font-sans text-brand-gray ~text-2xl/3xl">
-          <span className="mb-[-.3em] block">{skater.data.first_name}</span>
-          <span className="block">{skater.data.last_name}</span>
+          <span className="mb-[-.3em] block">{member.data.first_name}</span>
+          <span className="block">{member.data.last_name}</span>
         </h3>
       </div>
-      <ButtonLink field={skater.data.customizer_link} size="sm">
-        Build their board
+      <ButtonLink field={member.data.customizer_link} size="sm">
+        View
       </ButtonLink>
     </div>
   );
