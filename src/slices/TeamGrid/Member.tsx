@@ -1,7 +1,7 @@
 import { ButtonLink } from "@/components/ButtonLink";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
-import { SkaterScribble } from "./SkaterScribble";
+import { MemberScribble } from "./MemberScribble";
 import clsx from "clsx";
 
 type Props = {
@@ -30,7 +30,7 @@ export function Member({ member, index }: Props) {
           alt=""
           className="scale-110 transform transition-all duration-1000 ease-in-out group-hover:scale-100 group-hover:brightness-75 group-hover:saturate-[.8]"
         />
-        <SkaterScribble className={clsx("relative", scribbleColor)} />
+        <MemberScribble className={clsx("relative", scribbleColor)} />
         <PrismicNextImage
           field={member.data.photo_foreground}
           width={500}
