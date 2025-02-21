@@ -10,6 +10,7 @@ import { Heading } from "@/components/Heading";
 import { ButtonLink } from "@/components/ButtonLink";
 import { WideLogo } from "./WideLogo";
 import { TallLogo } from "./TallLogo";
+// import { Formula1 } from "@/components/global/formula1";
 
 
 /**
@@ -28,6 +29,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className="bg-brand-pink relative h-dvh overflow-hidden text-zinc-800 bg-texture"
     >
+      {/* <Formula1 /> */}
       <div className="absolute inset-0 flex items-center pt-20">
         <WideLogo className="w-full text-brand-purple hidden opacity-20 mix-blend-multiply lg:block" />
         <TallLogo className="w-full text-brand-purple opacity-20 mix-blend-multiply lg:hidden" />
